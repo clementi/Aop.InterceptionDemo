@@ -20,6 +20,6 @@ public static void Main(string[] args)
 ```
 
 We tell the ship to go to warp 10, which is an impossible velocity. This throws an `ImpossibleVelocityException`,
-but because we're using AOP interception with Unity, the exception is caught and logged---without us having to surround
-our calls to `GoToWarp` with a `try`/`catch`. Thus the cross-cutting concern of handling and logging exceptions is
-handled in the AOP interceptor instead of in every place we call `GoToWarp`.
+but because we're using AOP interception with Unity, the exception is caught and logged&mdash;without us having 
+to surround our calls to `GoToWarp` with a `try`/`catch`. Thus the cross-cutting concern of handling and logging
+exceptions is handled in the AOP interceptor instead of in every place we call `GoToWarp`.
